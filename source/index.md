@@ -5,6 +5,7 @@ language_tabs:
   - shell
   - ruby
   - python
+  - node
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
@@ -12,6 +13,7 @@ toc_footers:
 
 includes:
   - errors
+  - test
 
 search: true
 ---
@@ -45,7 +47,11 @@ api = kittn.authorize('meowmeowmeow')
 curl "api_endpoint_here"
   -H "Authorization: meowmeowmeow"
 ```
+```javascript 
+var boomapi = require('boomtown-api');
 
+api = boomapi.authorize('thisGuy');
+```
 > Make sure to replace `meowmeowmeow` with your API key.
 
 Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
